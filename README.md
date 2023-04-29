@@ -1,4 +1,6 @@
-# CLI To-Do List Project in Rust
+# rusty-task
+
+**CLI To-Do List Project in Rust**
 
 This is a simple Command Line Interface (CLI) To-Do list project built using Rust. This project is designed to help you learn the basics of Rust and CLI application development.
 
@@ -15,10 +17,10 @@ This is a simple Command Line Interface (CLI) To-Do list project built using Rus
 
 <!--## Installation
 
-Clone this repository: git clone `https://github.com/cristoxdxd/CLI-TO-DO-List.git`
-Change to the project directory: cd rust-todo-cli
+Clone this repository: git clone `https://github.com/cristoxdxd/rusty-task.git`
+Change to the project directory: `cd rusty-task/`
 Build the project: cargo build --release
-Run the executable: ./target/release/todo-->
+Run the executable: ./target/release/todo
 
 ## Usage
 The CLI interface supports the following commands:
@@ -28,7 +30,7 @@ The CLI interface supports the following commands:
 - `complete` - Mark a task as completed
 - `remove` - Remove a task from your to-do list
 
-<!--## Examples
+## Examples
 
 Add a task to your to-do list:
 
