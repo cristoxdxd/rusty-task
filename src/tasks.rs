@@ -19,7 +19,7 @@ impl Task {
         let created_at: DateTime<Utc> = Utc::now();
         Task {
             text,
-            created_at: Utc::now(),
+            created_at,
         }
     }
 }
@@ -36,7 +36,7 @@ fn collect_tasks(mut file: &File) -> Result<Vec<Task>> {
 }
 
 pub fn add_task(journal_path: PathBuf, task: Task) -> Result<()> {
-    let mut file = OpenOptions::new()
+    let file = OpenOptions::new()
         .read(true)
         .write(true)
         .create(true)
