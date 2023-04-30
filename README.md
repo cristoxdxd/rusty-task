@@ -19,36 +19,42 @@ This is a simple Command Line Interface (CLI) To-Do list project built using Rus
 
 1. Clone this repository: `git clone https://github.com/cristoxdxd/rusty-task.git`
 2. Change to the project directory: `cd rusty-task/`
-3. Build and run the project: `cargo run`. This will download all the dependencies, build the project, and run the CLI help.
+3. Build the project: `cargo run --release`.
+4. Change to the target directory: `cd target/release/`
+5. Run the project: `./rusty-task` or `./rusty-task.exe` (Windows)
 
 ## Usage
+
+Linux/macOS: `./rusty-task [OPTIONS] <SUBCOMMAND>`
+Windows: `./rusty-task.exe [OPTIONS] <SUBCOMMAND>`
 
 The CLI interface supports the following commands:
 
 - `add` - Add a new task to your to-do list
 - `list` - List all the tasks in your to-do list
 - `done` - Remove a task as completed
+- `help` - Display the help menu
 
 ## Examples
 
 Add a task to your to-do list:
 
 ```bash
-$ cargo run -- -j example-name.json add "Buy milk"
+$ ./rusty-task add "Buy milk"
 Added task "Buy milk"
 ```
 
 List all the tasks in your to-do list:
 
 ```bash
-$ cargo run -- -j example-name.json list
+$ ./rusty-task list
 1. Buy milk
 ```
 
 Mark a task as completed:
 
 ```bash
-$ cargo run -- -j example-name.json done 1
+$ ./rusty-task done 1
 Completed task "Buy milk"
 ```
 
